@@ -142,15 +142,18 @@ const SideBar = ({
       {/* Header */}
       {/* <SidebarHeader> */}
         <Menu iconShape="circle">
+            component={<Link to="/" className="link" />}
           {collapsed ? (
             <MenuItem style={{color:'white'}}
               icon={<FaAngleDoubleRight />}
               onClick={handleCollapsedChange}
+              component={<Link to="/" className="link" />}
             ></MenuItem>
           ) : (
             <MenuItem style={{color:'white'}}
               suffix={<FaAngleDoubleLeft />}
               onClick={handleCollapsedChange}
+              component={<Link to="/" className="link" />}
             >
               <div
                 style={{
@@ -173,7 +176,8 @@ const SideBar = ({
         <Menu iconShape="circle">
           <MenuItem style={{color:'white'}}
             icon={<TbSquareKey />}
-            // suffix={<span className="badge red">NEW</span>}
+            component={<Link to="/" className="link" />}
+            // suffix={<span className="badge red">NEW</span>}c
           >
             Dashboard
             <NavLink to="/" />

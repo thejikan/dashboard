@@ -32,7 +32,7 @@ function App() {
   return (
     <div className={`app ${toggled ? 'toggled' : ''}`}>
       <Sidebar
-        image={image}
+        // image={image}
         collapsed={collapsed}
         toggled={toggled}
         handleToggleSidebar={handleToggleSidebar}
@@ -46,7 +46,7 @@ function App() {
           <Route path="/components" element={<Components/>} />
           <Route path="/profile" element={<Components/>} />
           <Route path="/not-found" element={<Components/>} />
-          <Route path="/" element={<Content />}/>
+          <Route path="/" element={<Content/>}/>
             
           {/* </Route> */}
           {/* <Redirect to="/not-found" /> */}
@@ -58,7 +58,7 @@ function App() {
 
     // <div className="App">
     //     {/* <Header /> */}
-    //     <SideBar />
+    //     {/* <SideBar /> */}
     //     <Content />
     //   </div>
 

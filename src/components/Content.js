@@ -6,12 +6,9 @@ import { AiOutlineArrowDown } from "react-icons/ai";
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
-import { Bar } from "react-chartjs-2";
 import { BarChart } from '@mui/x-charts/BarChart';
 import { PieChart } from '@mui/x-charts/PieChart';
 import Table from 'react-bootstrap/Table';
-import Dropdown from 'react-bootstrap/Dropdown';
-import {View, Image, StyleSheet} from 'react-native';
 
 
 
@@ -29,39 +26,6 @@ export default class Content extends Component {
             {"name":"test4", "stocks":"32", "price": "45.99", "total":"20", "description":"wqew dasd asdda dff"}
         ];
         
-        
-        //   const options = {
-        //     responsive: false,
-        //     scales: {
-        //       xAxes: [
-        //         {
-        //           gridLines: {
-        //             display: true,
-        //             drawBorder: false,
-        //             borderDash: [3, 3],
-        //             zeroLineColor: "blue"
-        //           },
-        //           categoryPercentage: 0.7,
-        //           barPercentage: 0.9,
-        //           ticks: {
-        //             beginAtZero: true
-        //           }
-        //         }
-        //       ],
-        //       yAxes: [
-        //         {
-        //           display: false,
-        //           gridLines: {
-        //             display: false,
-        //             zeroLineColor: "transparent"
-        //           },
-        //           ticks: {
-        //             beginAtZero: true
-        //           }
-        //         }
-        //       ]
-        //     }
-        //   };
 
 
         return (
@@ -194,8 +158,8 @@ export default class Content extends Component {
                     
                     <div  style={{ display: 'inline-block', backgroundColor:'white', borderRadius: '5%', marginLeft: '5vh' }}>
                         <div style={{padding:'2vh'}}>
-                            <p style={{ fontSize: '20px', fontWeight: 'bolder'}}>Customers</p>
-                            <p style={{ fontSize: '20px', fontWeight: 'bolder'}}>Customers that buy products</p>
+                            <p>Customers</p>
+                            <p>Customers that buy products</p>
                         </div>
                         <PieChart style={{ display: 'inline-block', verticalAlign: 'middle' }}
                             series={[
